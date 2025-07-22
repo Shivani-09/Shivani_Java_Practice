@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 
+
 public class Shivani_Java_Main {
 
 	public static void main(String[] args) throws Exception {
@@ -127,6 +128,26 @@ public class Shivani_Java_Main {
 //		
 //		
 	        System.out.println(" ");
+	        
+	     // ----------------------------------------------------------
+			// Implementing Dynamic Array HW
+	        
+	        ArrayImplentation ai = new ArrayImplentation();
+	        
+	        ai.add(10);
+	        ai.add(20);
+	        ai.add(30);
+	        ai.add(40);
+	        ai.add(50);
+	        
+	        System.out.println("The list after adding numbers: ");
+	        ai.printList();
+	        
+	        System.out.println("The value at index 2 is "+ ai.get(2));
+	        
+	        
+	        System.out.println(" ");
+	        
 		// ----------------------------------------------------------
 		// Finding duplicates in HashMap example.
 
@@ -197,6 +218,29 @@ public class Shivani_Java_Main {
 		
 		//
 		System.out.println(" ");
+		
+		// ----------------------------------------------------------
+//		Implementing Dynamic HashMap without built in funcs
+		
+		
+		ShivaniHashmap myMap = new ShivaniHashmap();
+
+		System.out.println(myMap.capacity);
+		System.out.println(" ");
+		myMap.put("Mother", 1);
+		myMap.put("Wife", 2);
+		myMap.put("Daughter", 3);
+		myMap.put("Friend", 4);
+		myMap.put("Sister", 5);
+		myMap.put("Sister", 3); // overridden the sister value
+
+		myMap.printMap();
+		
+		System.out.println();
+		System.out.println("The value for Sister is " + myMap.get("Sister"));
+		
+		System.out.println();myMap.remove("Friend");
+		myMap.printMap();
 		
     }
 }
