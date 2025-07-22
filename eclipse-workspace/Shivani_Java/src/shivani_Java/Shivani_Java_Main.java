@@ -114,17 +114,17 @@ public class Shivani_Java_Main
 //		 
 //	
 		//----------------------------------------------------------
-	//	
+	//	need to work on adding elemet to node
 			
 		
 		
-//		Shivani_Java_Class sjc = new Shivani_Java_Class(5);
-//		
-//		System.out.println("Enter a number: ");
-//		sjc.addingFirst(2, sc.nextInt());
-//		
-//		sjc.printArray();
-//		
+		Shivani_Java_Class sjc = new Shivani_Java_Class(5);
+		
+		System.out.println("Enter a number: ");
+		sjc.addingFirst(2, sc.nextInt());
+		
+		sjc.printArray();
+		
 		
 		
 	}
