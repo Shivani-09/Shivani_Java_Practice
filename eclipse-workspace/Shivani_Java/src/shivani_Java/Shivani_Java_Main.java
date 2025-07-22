@@ -1,5 +1,6 @@
 package shivani_Java;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 
@@ -117,15 +118,41 @@ public class Shivani_Java_Main
 	//	need to work on adding elemet to node
 			
 		
+//		
+//		Shivani_Java_Class sjc = new Shivani_Java_Class(5);
+//		
+//		System.out.println("Enter a number: ");
+//		sjc.addingFirst(2, sc.nextInt());
+//		
+//		sjc.printArray();
+//		
+//		
 		
-		Shivani_Java_Class sjc = new Shivani_Java_Class(5);
+		//----------------------------------------------------------
+		//	Finding duplicates in HashMap example. 
+
+			
+HashMap <Integer, Integer> fruits = new HashMap<>();
 		
-		System.out.println("Enter a number: ");
-		sjc.addingFirst(2, sc.nextInt());
+		int[] array = {1,2,3,2,4,5,3};
 		
-		sjc.printArray();
+		for (int i=0; i<array.length; i++) {
 		
+			int n = array[i];
+			
+			if (fruits.containsKey(n)) {
+				int prev = fruits.get(n);
+				fruits.put(n, prev+1);
+				
+				}else {
+				fruits.put(n, 1);
+			}
+			
+		}
+		for (int Basket:fruits.keySet()) {
+			System.out.println(Basket + " -> " +fruits.get(Basket));
 		
+		}
 		
 	}
 	
