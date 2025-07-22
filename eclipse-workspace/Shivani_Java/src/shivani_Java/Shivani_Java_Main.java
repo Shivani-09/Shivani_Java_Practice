@@ -203,7 +203,7 @@ public class Shivani_Java_Main {
 		
 		System.out.println(" ");
 		//file handling hw: byte Stream ->8bits storage data -> audio,video,txt to store -> Input & Output Stream
-						//	character stream -> character data -> unicode conventionn to store -> Reader & Writer
+						//	character stream -> character data -> unicode convention to store -> Reader & Writer
 		
 		File f = new File("demo.txt");		//
 		
@@ -220,7 +220,7 @@ public class Shivani_Java_Main {
 		System.out.println(" ");
 		
 		// ----------------------------------------------------------
-//		Implementing Dynamic HashMap without built in funcs
+//		Implementing Dynamic HashMap without built in functions
 		
 		
 		ShivaniHashmap myMap = new ShivaniHashmap();
@@ -232,7 +232,7 @@ public class Shivani_Java_Main {
 		myMap.put("Daughter", 3);
 		myMap.put("Friend", 4);
 		myMap.put("Sister", 5);
-		myMap.put("Sister", 3); // overridden the sister value
+//		myMap.put("Sister", 3); // overridden the sister value
 
 		myMap.printMap();
 		
