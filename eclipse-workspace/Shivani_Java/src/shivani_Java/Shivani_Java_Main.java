@@ -215,8 +215,7 @@ public class Shivani_Java_Main {
 		DataInputStream dis = new DataInputStream(fis);
 		String str = dis.readUTF();
 		System.out.println(str);
-		
-		//
+
 		System.out.println(" ");
 		
 		// ----------------------------------------------------------
@@ -241,6 +240,37 @@ public class Shivani_Java_Main {
 		
 		System.out.println();myMap.remove("Friend");
 		myMap.printMap();
+		
+		System.out.println(" ");
+		
+		// ----------------------------------------------------------	
+	// word count using hashmap:
+		
+		HashMap <String, Integer> word = new HashMap<>();
+		
+		String[] fruitList = {"apple", "grapes", "apple", "papaya", "papaya", "papaya"};
+		
+		for (int i=0; i< fruitList.length; i++) {
+			String  n = fruitList[i];
+			
+			if (word.containsKey(n)) {
+				int prev = word.get(n);
+				word.put(n, prev+1);
+				
+			}else {
+				word.put(n, 1);
+			}
+		}
+		
+		for (String wordCount: word.keySet()) {
+			System.out.println(wordCount + " -> " + word.get(wordCount));
+		}
+		
+		System.out.println(" ");
+		// ----------------------------------------------------------	
+	// word count using hashmap:
+		
+		
 		
     }
 }
