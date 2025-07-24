@@ -1,0 +1,75 @@
+# macOS system files
+.DS_Store
+.CFUserTextEncoding
+
+# IDEs and Editors
+.vscode/
+.eclipse/
+.idea/
+*.iml
+
+# Eclipse
+*.class
+*.project
+*.classpath
+.metadata/
+.settings/
+bin/
+tmp/
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+.anaconda/
+.conda/
+.condarc
+
+# VS Code
+.vscode/
+
+# OS X Trash
+.Trash/
+
+# Docker
+.docker/
+
+# Bash, Zsh and other shell history/sessions
+.bash_history
+.bash_profile
+.bash_profile.pysave
+.bash_sessions/
+.tcshrc
+.zsh_history
+.zsh_sessions/
+.zshrc
+
+# Azure Data Studio
+.azuredatastudio/
+
+# SDKMAN
+.sdkman/
+
+# Config
+.config/
+.continuum/
+.cups/
+.npm/
+.p2/
+.viminfo
+.xonshrc
+
+# Java workspace folders
+eclipse-workspace/.metadata/
+eclipse-workspace/*/bin/
+eclipse-workspace/*/.settings/
+eclipse-workspace/*/.classpath
+eclipse-workspace/*/.project
+
+# Node
+node_modules/
+
+# Others
+.gitconfig
+y
+
